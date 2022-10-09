@@ -3,6 +3,7 @@ import house from "../assets/logo/house-footer.svg";
 import door from "../assets/logo/door-footer.svg";
 import s from "../assets/logo/s-footer.svg";
 import a from "../assets/logo/a-footer.svg";
+import "../styles/Footer.css";
 
 const Footer = () => (
   <footer>

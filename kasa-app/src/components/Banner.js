@@ -1,4 +1,5 @@
 import bannerImage from "../assets/photo-1593201464350-96ec57065aa2.webp";
+import "../styles/Banner.css";
 
 const Banner = () => (
   <section className="banner">

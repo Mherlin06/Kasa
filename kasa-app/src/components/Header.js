@@ -3,6 +3,7 @@ import house from "../assets/logo/house-vector.svg";
 import door from "../assets/logo/door-vector.svg";
 import s from "../assets/logo/s-vector.svg";
 import a from "../assets/logo/a-vector.svg";
+import "../styles/Header.css";
 
 function Header() {
   return (
