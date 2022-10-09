@@ -7,10 +7,10 @@ import "../styles/Footer.css";
 
 const Footer = () => (
   <footer>
-    <div className="logo footer__logo">
+    <div className="logo">
       <img src={k} alt="k-vector"></img>
       <img src={house} alt="house-vector"></img>
-      <img src={door} alt="door-vector"></img>
+      <img src={door} alt="door-vector" className="door-vector"></img>
       <img src={s} alt="s-vector"></img>
       <img src={a} alt="a-vector"></img>
     </div>
