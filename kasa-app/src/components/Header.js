@@ -8,16 +8,20 @@ import "../styles/Header.css";
 function Header() {
   return (
     <header>
-      <div className="logo header__logo">
+      <div className="header__logo">
         <img src={k} alt="k-vector"></img>
         <img src={house} alt="house-vector"></img>
-        <img src={door} alt="door-vector"></img>
+        <img src={door} alt="door-vector" className="door-header"></img>
         <img src={s} alt="s-vector"></img>
         <img src={a} alt="a-vector"></img>
       </div>
       <nav>
-        <a href="#">Acceuil</a>
-        <a href="#">A propos</a>
+        <a href="#" className="nav-links">
+          ACCUEIL
+        </a>
+        <a href="#" className="nav-links">
+          A PROPOS
+        </a>
       </nav>
     </header>
   );

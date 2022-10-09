@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.header__logo {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+}
+
+.door-header {
+  position: absolute;
+  left: 46%;
+  top: 63%;
+}
+
+nav {
+  font-size: 12px;
+}
+
+.nav-links {
+  margin-left: 10px;
+  color: #ff6060;
+  position: relative;
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  background-color: #ff6060;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.nav-links:hover::before {
+  display: block;
+}
