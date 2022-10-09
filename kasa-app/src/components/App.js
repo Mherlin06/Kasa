@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Banner from "./Banner";
 import ThumbCards from "./ThumbCards";
-import Footer from "./Footer/Footer"
+import Footer from "./Footer"
 
 const App = () => (
   <div>
