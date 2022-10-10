@@ -7,9 +7,6 @@ footer {
   align-items: center;
   text-align: center;
   padding: 60px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .copyrights {

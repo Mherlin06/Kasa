@@ -1,0 +1,66 @@
+.thumbcard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.thumbcard a {
+  margin-bottom: 20px;
+  height: 255px;
+  background-color: #ff6060;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  padding: 20px;  
+  display: flex;
+}
+
+.thumbcard a:hover {
+  transform: scale(1.005);
+  transition: transform 0.25s ease-in-out;
+  -webkit-transition: transform 0.25s ease-in-out;
+  -moz-transition: transform 0.25s ease-in-out;
+  -ms-transition: transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  -webkit-transform: scale(1.005);
+  -moz-transform: scale(1.005);
+  -ms-transform: scale(1.005);
+  -o-transform: scale(1.005);
+}
+
+.thumbcard a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.thumbcard h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    align-self: flex-end;
+    z-index: 1;
+}
