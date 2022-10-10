@@ -7,6 +7,9 @@ footer {
   align-items: center;
   text-align: center;
   padding: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .copyrights {
@@ -21,8 +24,8 @@ footer {
   position: relative;
 }
 
-.door-vector{
-    position: absolute;
-    left: 45%;
-    top: 63%;
+.door-vector {
+  position: absolute;
+  left: 45%;
+  top: 63%;
 }
