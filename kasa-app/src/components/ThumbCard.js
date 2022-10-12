@@ -6,8 +6,11 @@ const ThumbCard = () => {
     <section className="thumbcard">
       {locationList.map((location) => (
         <a href="#" key={location.id}>
-          <img key={location.id} src={location.cover} alt={location.title}></img>
-          <h2 key={location.id}>{location.title}</h2>
+          <img
+            src={location.cover}
+            alt={location.title}
+          ></img>
+          <h2>{location.title}</h2>
         </a>
       ))}
     </section>
