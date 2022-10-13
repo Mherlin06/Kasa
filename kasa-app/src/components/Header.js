@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import k from "../assets/logo/k-vector.svg";
 import house from "../assets/logo/house-vector.svg";
 import door from "../assets/logo/door-vector.svg";
@@ -5,7 +6,7 @@ import s from "../assets/logo/s-vector.svg";
 import a from "../assets/logo/a-vector.svg";
 import "../styles/Header.css";
 
-function Header() {
+export default function Header() {
   return (
     <header>
       <div className="header__logo">
@@ -16,15 +17,9 @@ function Header() {
         <img src={a} alt="a-vector"></img>
       </div>
       <nav>
-        <a href="#" className="nav-links">
-          ACCUEIL
-        </a>
-        <a href="#" className="nav-links">
-          A PROPOS
-        </a>
+        <Link to="/" className="nav-links">ACCUEIL</Link>
+        <Link to="/a-propos" className="nav-links">A PROPOS</Link>
       </nav>
     </header>
   );
 }
-
-export default Header;

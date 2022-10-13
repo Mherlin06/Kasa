@@ -3,10 +3,10 @@ import ThumbCard from "./ThumbCard";
 
 const Home = () => {
   return (
-    <div className="HomeMain">
+    <main className="HomeMain">
       <Banner />
       <ThumbCard />
-    </div>
+    </main>
   );
 };
 

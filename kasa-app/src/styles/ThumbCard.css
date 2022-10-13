@@ -1,6 +1,7 @@
 .thumbcard {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   padding: 20px;
 }
@@ -8,6 +9,8 @@
 .thumbcard a {
   margin-bottom: 20px;
   height: 255px;
+  width: 100%;
+  max-width: 400px;
   background-color: #ff6060;
   position: relative;
   border-radius: 10px;
