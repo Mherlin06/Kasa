@@ -1,13 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
-import Banner from "./Banner";
-import ThumbCard from "./ThumbCard";
 import Footer from "./Footer";
+import Home from "./Home";
+import About from "./About";
 
 const App = () => (
-  <div>
+  <div className="App">
     <Header />
-    <Banner />
-    <ThumbCard />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/a-propos" element={<About/>}/>
+      <Route />
+    </Routes>
     <Footer />
   </div>
 );
