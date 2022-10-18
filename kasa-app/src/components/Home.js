@@ -3,7 +3,7 @@ import ThumbCard from "./ThumbCard";
 
 const Home = () => {
   return (
-    <main className="HomeMain">
+    <main>
       <Banner />
       <ThumbCard />
     </main>
