@@ -6,7 +6,7 @@ const ThumbCard = () => {
   return (
     <section className="thumbcards">
       {accomodationList.map((accomodation) => (
-        <Link to="/fiche-logement/" key={accomodation.id}>
+        <Link to={"/fiche-logement/" + accomodation.id} key={accomodation.id}>
           <img src={accomodation.cover} alt={accomodation.title}></img>
           <h2>{accomodation.title}</h2>
         </Link>
