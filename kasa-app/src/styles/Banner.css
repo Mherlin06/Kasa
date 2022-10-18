@@ -1,5 +1,4 @@
 .banner {
-  margin: 20px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -9,6 +8,7 @@
   object-fit: cover;
   position: relative;
   mix-blend-mode: darken;
+  margin-bottom: 20px;
 }
 .banner::after {
   content: "";

@@ -3,7 +3,6 @@ const About = () => {
         <main>
             <p>About</p>
         </main>
-
     );
 }
 
