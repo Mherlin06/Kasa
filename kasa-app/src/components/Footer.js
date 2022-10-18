@@ -3,9 +3,7 @@ import "../styles/Footer.css";
 
 const Footer = () => (
   <footer>
-    <div className="logo">
-    <img src={logo} alt="k-vector"></img>
-    </div>
+    <img src={logo} alt="k-vector" className="logo"></img>
     <p className="copyrights">© 2020 Kasa. All rights reserved</p>
   </footer>
 );

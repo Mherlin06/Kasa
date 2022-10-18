@@ -5,9 +5,7 @@ import "../styles/Header.css";
 export default function Header() {
   return (
     <header>
-      <div className="header__logo">
-      <img src={logo} alt="k-vector"></img>
-      </div>
+      <img src={logo} alt="k-vector" className="header__logo"></img>
       <nav>
         <Link to="/" className="nav-links">
           ACCUEIL
