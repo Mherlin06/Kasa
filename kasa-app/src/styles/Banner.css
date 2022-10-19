@@ -79,6 +79,7 @@
     font-size: 36px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .banner {
     border-radius: 25px;
