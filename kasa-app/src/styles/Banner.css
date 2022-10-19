@@ -10,6 +10,7 @@
   mix-blend-mode: darken;
   margin-bottom: 20px;
 }
+
 .banner::after {
   content: "";
   position: absolute;
@@ -17,7 +18,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -37,13 +38,75 @@
 }
 
 .banner h1 {
-  width: 217px;
   font-size: 24px;
   color: #fff;
   position: absolute;
   top: 31px;
   left: 16px;
   bottom: 32px;
-  font-weight: 500; 
+  font-weight: 500;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .banner::after {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  .banner img {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  .banner h1 {
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    height: 225px;
+    margin-bottom: 45px;
+  }
+  .banner img {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  .banner h1 {
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    font-size: 48px;
+  }
+  .banner::after {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
 }
