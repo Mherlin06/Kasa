@@ -23,17 +23,6 @@ nav {
   position: relative;
 }
 
-.nav-links::before {
-  content: "";
-  position: absolute;
-  background-color: #ff6060;
-  height: 1px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-}
-
-.nav-links:hover::before {
-  display: block;
+.nav-links:hover{
+  text-decoration: underline;
 }
