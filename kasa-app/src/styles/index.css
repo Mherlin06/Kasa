@@ -1,4 +1,6 @@
-*, ::after, ::before{
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,11 +13,23 @@ main {
   padding: 20px;
 }
 
-.App{
+.App {
   height: 100vh;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 60px 100px;
+  }
 }
