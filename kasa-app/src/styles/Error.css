@@ -1,31 +1,32 @@
-.error-page{
-    color: #ff6060;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-    position: relative;
+.error-page {
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  position: relative;
 }
 
 .error-page h1 {
-    font-size: 96px;
-    font-weight: 700;
+  font-size: 96px;
+  font-weight: 700;
 }
 
 .error-page h2 {
-    font-weight: 500;
-    font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .error-page a {
-    font-size: 14px;
-    position: absolute;
-    bottom: 50px;
-    color: #ff6060;
+  font-size: 14px;
+  position: absolute;
+  bottom: 50px;
+  color: #ff6060;
 }
 
-.error-page a:hover{
-    text-decoration: underline;
+.error-page a:hover {
+  text-decoration: underline;
 }

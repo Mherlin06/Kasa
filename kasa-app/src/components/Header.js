@@ -8,10 +8,10 @@ export default function Header() {
       <img src={logo} alt="k-vector" className="header__logo"></img>
       <nav>
         <Link to="/" className="nav-links">
-          ACCUEIL
+          Acceuil
         </Link>
         <Link to="/a-propos" className="nav-links">
-          A PROPOS
+          A propos
         </Link>
       </nav>
     </header>
