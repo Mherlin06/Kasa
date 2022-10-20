@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "./Home";
-import About from "./About";
-import Accomodation from "./Accomodation";
-import Error from "./Error";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Accomodation from "./components/Accomodation";
+import Error from "./pages/Error";
 
 const App = () => (
   <div className="App">

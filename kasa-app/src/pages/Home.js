@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import ThumbCard from "./ThumbCard";
+import Banner from "../components/Banner";
+import ThumbCard from "../components/ThumbCard";
 
 const Home = () => {
   return (
