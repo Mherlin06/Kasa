@@ -1,7 +1,9 @@
+import AboutBanner from "../components/AboutBanner";
+
 const About = () => {
     return (
         <main>
-            <p>About</p>
+            <AboutBanner />
         </main>
     );
 }

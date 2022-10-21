@@ -1,4 +1,4 @@
-export const accomodationList = [
+export const accomodationData = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",
