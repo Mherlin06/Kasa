@@ -1,9 +1,9 @@
-import AboutBanner from "../components/AboutBanner";
+import Banner from "../components/Banner";
 
 const About = () => {
     return (
         <main>
-            <AboutBanner />
+            <Banner class="banner about-banner"/>
         </main>
     );
 }

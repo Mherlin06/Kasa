@@ -4,7 +4,7 @@ import ThumbCard from "../components/ThumbCard";
 const Home = () => {
   return (
     <main>
-      <Banner />
+      <Banner title="Chez vous, partout et ailleurs" class="banner"/>
       <ThumbCard />
     </main>
   );
