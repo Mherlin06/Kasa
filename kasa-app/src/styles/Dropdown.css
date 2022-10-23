@@ -23,12 +23,15 @@
   color: #fff;
   font-size: 13px;
   font-weight: 500;
+  text-transform: capitalize;
 }
+
 .dd-title button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
 .dd-content {
   width: 100%;
   background-color: #f6f6f6;
@@ -51,10 +54,41 @@
   font-weight: 400;
 }
 
-.arrow-close{
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+.arrow-close {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    margin-top: 30px;
+  }
+
+  .dd-title {
+    padding: 5px 15px;
+  }
+
+  .dd-title h2 {
+    font-size: 18px;
+  }
+
+  .dd-content {
+    padding: 30px 20px;
+  }
+
+  .dd-content p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1064px) {
+  .dd-title h2 {
+    font-size: 24px;
+  }
+  .dd-content p {
+    font-size: 24px;
+  }
 }
