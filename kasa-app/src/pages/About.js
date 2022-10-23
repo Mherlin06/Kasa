@@ -1,11 +1,12 @@
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
+import aboutInfos from "../data/aboutInfos"
 
 const About = () => {
     return (
         <main>
             <Banner class="banner about-banner"/>
-            <Dropdown />
+            {aboutInfos.map((infos) => <Dropdown label={infos.label} description={infos.description}/>)}
         </main>
     );
 }
