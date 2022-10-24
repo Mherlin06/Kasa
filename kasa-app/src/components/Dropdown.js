@@ -6,7 +6,7 @@ const Dropdown = (props) => {
   const [isOpen, setIsOpen] = useState(true);
 
   return isOpen ? (
-    <article className="dropdown">
+    <article className={props.classes}>
       <div className="dd-title">
         <h2>{props.label}</h2>
         <button onClick={() => setIsOpen(false)}>
@@ -18,7 +18,7 @@ const Dropdown = (props) => {
       </div>
     </article>
   ) : (
-    <article className="dropdown">
+    <article className={props.classes}>
       <div className="dd-title">
         <h2>{props.label}</h2>
         <button onClick={() => setIsOpen(true)}>

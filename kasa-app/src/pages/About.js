@@ -7,7 +7,7 @@ const About = () => {
     <main>
       <Banner class="banner about-banner" />
       {aboutInfos.map((infos) => (
-        <Dropdown label={infos.label} description={infos.description} />
+        <Dropdown label={infos.label} description={infos.description} classes="dropdown"/>
       ))}
     </main>
   );

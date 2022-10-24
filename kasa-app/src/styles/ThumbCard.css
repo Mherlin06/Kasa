@@ -4,12 +4,16 @@
   justify-content: center;
   width: 100%;
   gap: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .thumbcards a {
   height: 255px;
   width: 100%;
-  max-width: 400px;
   background-color: #ff6060;
   position: relative;
   border-radius: 10px;
@@ -74,4 +78,27 @@
 .thumbcards img {
   object-fit: cover;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbcards {
+    padding: 50px;
+    background-color: #f7f7f7;
+    gap: 50px;
+  }
+  .thumbcards a {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .thumbcards {
+    row-gap: 50px;
+    justify-content: space-around;
+  }
+
+  .thumbcards a {
+    height: 340px;
+    width: 340px;
+  }
 }
