@@ -1,0 +1,8 @@
+.rating {
+    display: flex;
+    gap: 3.5px;
+}
+
+.star img{
+    height: 15px;
+}

@@ -21,17 +21,17 @@ const Accomodation = () => {
           </ul>
         </div>
         <div className="host-rating">
-          <Rating rate={4}/>
-          <HostCard hostName="Pierre Durand"/>
+          <Rating rate={4} />
+          <HostCard hostName="Pierre Durand" />
         </div>
       </section>
-      <section className="accomodation-dropdown">
+      <section className="accomodation-dropdown-section">
         <Dropdown
           label="Description"
           description="lorem15"
-          classes="dropdown"
+          classes="dropdown accomodation-dropdown"
         />
-        <Equipments />
+        <Equipments classes="dropdown accomodation-dropdown" />
       </section>
     </main>
   );
