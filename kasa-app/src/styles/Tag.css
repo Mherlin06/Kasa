@@ -1,0 +1,22 @@
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tags li {
+    background-color: #ff6060;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    width: 84px;
+    height: 18px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 18px;
+}

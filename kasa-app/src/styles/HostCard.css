@@ -1,0 +1,28 @@
+.host-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.host-card h3 {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 12px;
+  width: 93px;
+  text-align: right;
+}
+.host-photo {
+  height: 32px;
+  width: 32px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+}
+
+.host-photo img {
+  height: 100%;
+  object-fit: cover;
+}

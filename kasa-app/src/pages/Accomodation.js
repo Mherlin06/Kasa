@@ -5,6 +5,7 @@ import Rating from "../components/Rating";
 import HostCard from "../components/HostCard";
 import Dropdown from "../components/Dropdown";
 import Equipments from "../components/Equipments";
+import "../styles/Accomodation.css";
 
 const Accomodation = () => {
   return (
@@ -14,17 +15,22 @@ const Accomodation = () => {
         <div className="title-card">
           <h1>Titre</h1>
           <h2>lieux</h2>
-          <div className="tags">
+          <ul className="tags">
             <Tag />
-          </div>
+            <Tag />
+          </ul>
         </div>
         <div className="host-rating">
-          <Rating />
-          <HostCard />
+          <Rating rate={4}/>
+          <HostCard hostName="Pierre Durand"/>
         </div>
       </section>
       <section className="accomodation-dropdown">
-        <Dropdown label="Description" description="lorem15" classes="dropdown"/>
+        <Dropdown
+          label="Description"
+          description="lorem15"
+          classes="dropdown"
+        />
         <Equipments />
       </section>
     </main>
