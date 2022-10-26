@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import arrow from "../assets/logo/arrow.svg";
-import "../styles/Equipments.css";
 
 const Equipments = (props) => {
   const [isOpen, setIsOpen] = useState(true);

@@ -6,8 +6,11 @@ import HostCard from "../components/HostCard";
 import Dropdown from "../components/Dropdown";
 import Equipments from "../components/Equipments";
 import "../styles/Accomodation.css";
+import { useParams } from "react-router-dom";
 
 const Accomodation = () => {
+  const {accomodationID} = useParams();
+  
   return (
     <main>
       <Carousel />
