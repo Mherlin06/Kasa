@@ -7,6 +7,7 @@ import Dropdown from "../components/Dropdown";
 import Equipments from "../components/Equipments";
 import "../styles/Accomodation.css";
 import { useParams } from "react-router-dom";
+import { accomodationData } from "../data/accomodationData";
 
 const Accomodation = () => {
   const {accomodationID} = useParams();

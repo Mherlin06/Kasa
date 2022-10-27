@@ -3,7 +3,7 @@ import arrow from "../assets/logo/arrow.svg";
 import "../styles/Dropdown.css";
 
 const Dropdown = (props) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
     <article className={props.classes}>

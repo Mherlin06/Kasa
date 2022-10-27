@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrow from "../assets/logo/arrow.svg";
 
 const Equipments = (props) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
     <article className={props.classes}>
