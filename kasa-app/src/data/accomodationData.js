@@ -1,4 +1,4 @@
-export const accomodationData = [
+const accomodations = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",
@@ -579,3 +579,11 @@ export const accomodationData = [
     tags: ["Louvre", "Marais", "Rivoli"],
   },
 ];
+
+export function getAccomodations() {
+  return accomodations;
+}
+
+export function getAccomodation(id) {
+  return accomodations.find((accomodation) => accomodation.id === id);
+}

@@ -5,37 +5,38 @@ import Rating from "../components/Rating";
 import HostCard from "../components/HostCard";
 import Dropdown from "../components/Dropdown";
 import Equipments from "../components/Equipments";
-import "../styles/Accomodation.css";
+import { getAccomodation } from "../data/accomodationData";
 import { useParams } from "react-router-dom";
-import { accomodationData } from "../data/accomodationData";
+import "../styles/Accomodation.css";
 
 const Accomodation = () => {
-  const {accomodationID} = useParams();
+  const params = useParams();
+  const accomodation = getAccomodation(params.id)
   
   return (
     <main>
       <Carousel />
       <section className="accomodation-infos">
         <div className="title-card">
-          <h1>Titre</h1>
-          <h2>lieux</h2>
+          <h1>{accomodation.title}</h1>
+          <h2>{accomodation.location}</h2>
           <ul className="tags">
             <Tag />
             <Tag />
           </ul>
         </div>
         <div className="host-rating">
-          <Rating rate={4} />
-          <HostCard hostName="Pierre Durand" />
+          <Rating rate={accomodation.rating} />
+          <HostCard hostName={accomodation.host.name} picture={accomodation.host.picture}/>
         </div>
       </section>
       <section className="accomodation-dropdown-section">
         <Dropdown
           label="Description"
-          description="lorem15"
+          description={accomodation.description}
           classes="dropdown accomodation-dropdown"
         />
-        <Equipments classes="dropdown accomodation-dropdown" />
+        <Equipments classes="dropdown accomodation-dropdown" Equipments={accomodation.equipments}/>
       </section>
     </main>
   );
