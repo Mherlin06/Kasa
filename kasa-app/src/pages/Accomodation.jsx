@@ -15,7 +15,7 @@ const Accomodation = () => {
 
   return (
     <main>
-      <Carousel />
+      <Carousel pictures={accomodation.pictures}/>
       <section className="accomodation-infos">
         <div className="title-card">
           <h1>{accomodation.title}</h1>
@@ -40,7 +40,7 @@ const Accomodation = () => {
           description={accomodation.description}
           classes="dropdown accomodation-dropdown"
         />
-        <Equipments
+        <Equipments 
           classes="dropdown accomodation-dropdown"
           equipments={accomodation.equipments}
         />

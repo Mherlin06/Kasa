@@ -25,7 +25,7 @@ const Equipments = (props) => {
       <div className="dd-title">
         <h2>équipements</h2>
         <button onClick={() => setIsOpen(true)}>
-          <img src={arrow} alt="flèche fermée" className="arrow-close"></img>
+          <img src={arrow} alt="flèche fermée" className="arrow-close" ></img>
         </button>
       </div>
     </article>
