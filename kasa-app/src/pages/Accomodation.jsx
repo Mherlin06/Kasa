@@ -11,8 +11,8 @@ import "../styles/Accomodation.css";
 
 const Accomodation = () => {
   const params = useParams();
-  const accomodation = getAccomodation(params.id)
-  
+  const accomodation = getAccomodation(params.id);
+
   return (
     <main>
       <Carousel />
@@ -21,13 +21,17 @@ const Accomodation = () => {
           <h1>{accomodation.title}</h1>
           <h2>{accomodation.location}</h2>
           <ul className="tags">
-            <Tag />
-            <Tag />
+            {accomodation.tags.map((tag) => (
+              <Tag tag={tag} />
+            ))}
           </ul>
         </div>
         <div className="host-rating">
           <Rating rate={accomodation.rating} />
-          <HostCard hostName={accomodation.host.name} picture={accomodation.host.picture}/>
+          <HostCard
+            hostName={accomodation.host.name}
+            picture={accomodation.host.picture}
+          />
         </div>
       </section>
       <section className="accomodation-dropdown-section">
@@ -36,7 +40,10 @@ const Accomodation = () => {
           description={accomodation.description}
           classes="dropdown accomodation-dropdown"
         />
-        <Equipments classes="dropdown accomodation-dropdown" Equipments={accomodation.equipments}/>
+        <Equipments
+          classes="dropdown accomodation-dropdown"
+          equipments={accomodation.equipments}
+        />
       </section>
     </main>
   );

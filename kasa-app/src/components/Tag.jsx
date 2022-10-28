@@ -4,7 +4,7 @@ import '../styles/Tag.css'
 const Tag = (props) => {
   return (
     <li>
-      Cozy
+      {props.tag}
     </li>
   )
 }

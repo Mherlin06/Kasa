@@ -14,8 +14,9 @@ const Equipments = (props) => {
       </div>
       <div className="dd-content">
         <ul>
-          <li>Climatisation</li>
-          <li>douche</li>
+          {props.equipments.map((item) => (
+            <li>{item}</li>
+          ))}
         </ul>
       </div>
     </article>
