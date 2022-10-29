@@ -1,30 +1,64 @@
 .accomodation-infos {
-    width: 100%;
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-card {
-    width: 100%;
+  width: 100%;
 }
 
 .title-card h1 {
-    font-size: 18px;
-    color: #ff6060;
-    font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  font-weight: 500;
 }
 
 .title-card h2 {
-    margin: 5px 0 10px;
-    color: #ff6060;
-    font-size: 14px;
-    font-weight: 500;
+  margin: 5px 0 10px;
+  color: #ff6060;
+  font-size: 14px;
+  font-weight: 500;
+  width: 300px;
 }
 
 .host-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .accomodation-infos {
+    flex-direction: row;
+  }
+  .host-rating {
+    flex-direction: column-reverse;
+    margin: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+  .title-card h1 {
+    font-size: 24px;
+  }
+  .title-card h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title-card h1 {
+    font-size: 36px;
+  }
+  .title-card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .accomodation-dropdown-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
+    gap: 76px;
+  }
 }

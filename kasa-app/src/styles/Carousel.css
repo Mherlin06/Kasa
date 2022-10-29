@@ -19,3 +19,32 @@
   margin: 6px;
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 335px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+  }
+  .carousel-arrow {
+    height: 50px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 415px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+  .carousel-arrow {
+    height: 80px;
+    margin: 23px;
+  }
+}

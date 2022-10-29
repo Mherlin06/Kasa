@@ -50,7 +50,8 @@
   -o-transform: translateY(-5px);
 }
 
-.dd-content p, .dd-content li {
+.dd-content p,
+.dd-content li {
   color: #ff6060;
   font-size: 12px;
   font-weight: 400;
@@ -69,7 +70,6 @@
   -o-transform: rotate(180deg);
 }
 
-
 @media screen and (min-width: 768px) {
   .dropdown {
     margin-top: 30px;
@@ -79,7 +79,11 @@
     padding: 5px 15px;
   }
 
-  .dd-title h2, .dd-content p {
+  .dd-title h2,
+  .dd-content p,
+  .accomodation-dropdown .dd-title h2,
+  .accomodation-dropdown .dd-content p,
+  .dd-content li {
     font-size: 18px;
     line-height: 25px;
   }
@@ -87,12 +91,20 @@
   .dd-content {
     padding: 30px 20px;
   }
-
 }
 
 @media screen and (min-width: 1064px) {
-  .dd-title h2, .dd-content p {
+  .dd-title h2,
+  .dd-content p {
     font-size: 24px;
     line-height: 34px;
+  }
+  .dd-title {
+    height: 45px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
 }
