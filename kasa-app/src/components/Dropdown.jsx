@@ -7,24 +7,20 @@ const Dropdown = (props) => {
 
   return isOpen ? (
     <article className={props.classes}>
-      <div className="dd-title">
+      <button className="dd-title" onClick={() => setIsOpen(false)}>
         <h2>{props.label}</h2>
-        <button onClick={() => setIsOpen(false)}>
-          <img src={arrow} alt="flèche ouverte" className="arrow-open"></img>
-        </button>
-      </div>
+        <img src={arrow} alt="flèche ouverte" className="arrow-open"></img>
+      </button>
       <div className="dd-content">
         <p>{props.description}</p>
       </div>
     </article>
   ) : (
     <article className={props.classes}>
-      <div className="dd-title">
+      <button className="dd-title" onClick={() => setIsOpen(true)}>
         <h2>{props.label}</h2>
-        <button onClick={() => setIsOpen(true)}>
-          <img src={arrow} alt="flèche fermée" className="arrow-close"></img>
-        </button>
-      </div>
+        <img src={arrow} alt="flèche fermée" className="arrow-close"></img>
+      </button>
     </article>
   );
 };

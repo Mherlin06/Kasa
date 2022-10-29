@@ -17,6 +17,8 @@
   -o-border-radius: 5px;
   z-index: 1;
   position: relative;
+  border: none;
+  cursor: pointer;
 }
 
 .dd-title h2 {
@@ -24,12 +26,6 @@
   font-size: 13px;
   font-weight: 500;
   text-transform: capitalize;
-}
-
-.dd-title button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 .dd-content {
