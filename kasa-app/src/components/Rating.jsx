@@ -5,11 +5,11 @@ import "../styles/Rating.css";
 
 const rangeRating = [1, 2, 3, 4, 5];
 
-const Rating = (props) => {
+const Rating = ({ rate }) => {
   return (
     <section className="rating">
       {rangeRating.map((ratingValue) =>
-        props.rate >= ratingValue ? (
+        rate >= ratingValue ? (
           <span className="star" key={ratingValue.toString()}>
             <img src={redStar} alt="étoile rouge"></img>
           </span>

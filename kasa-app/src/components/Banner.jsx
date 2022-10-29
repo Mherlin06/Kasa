@@ -1,12 +1,8 @@
 import "../styles/Banner.css";
 
-const Banner = (props) => {
-  const isHome = props.isHome;
-
+const Banner = ({ classes, title, isHome }) => {
   return (
-    <section className={props.class}>
-      {isHome ? <h1>{props.title}</h1> : null}
-    </section>
+    <section className={classes}>{isHome ? <h1>{title}</h1> : null}</section>
   );
 };
 

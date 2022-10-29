@@ -1,16 +1,15 @@
-import React from 'react'
-import profile from '../assets/default-profile.jpg'
-import '../styles/HostCard.css'
+import React from "react";
+import "../styles/HostCard.css";
 
-const HostCard = (props) => {
+const HostCard = ({ hostName, picture }) => {
   return (
-    <div className='host-card'>
-      <h3>{props.hostName}</h3>
-      <div className='host-photo'>
-        <img src={props.picture} alt="hébergeur"></img>
+    <div className="host-card">
+      <h3>{hostName}</h3>
+      <div className="host-photo">
+        <img src={picture} alt="hébergeur"></img>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default HostCard;
