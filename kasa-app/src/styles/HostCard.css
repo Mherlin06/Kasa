@@ -26,3 +26,25 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (min-width: 768px) {
+  .host-card h3 {
+    font-size: 15px;
+    width: 120px;
+  }
+  .host-photo {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .host-card h3 {
+    font-size: 18px;
+    width: 150px;
+  }
+  .host-photo {
+    height: 64px;
+    width: 64px;
+  }
+}
