@@ -21,4 +21,6 @@ const aboutInfos = [
   },
 ];
 
-export default aboutInfos;
+export function getInfos() {
+  return aboutInfos;
+}
