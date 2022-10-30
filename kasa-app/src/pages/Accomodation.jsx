@@ -21,7 +21,7 @@ const Accomodation = () => {
           <h2>{accomodation.location}</h2>
           <ul className="tags">
             {accomodation.tags.map((tag) => (
-              <Tag tag={tag} />
+              <Tag tag={tag} key={tag}/>
             ))}
           </ul>
         </div>
