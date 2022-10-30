@@ -4,26 +4,24 @@ import "../styles/Dropdown.css";
 
 const Dropdown = ({ classes, label, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return isOpen ? (
     <article className={classes}>
       <button className="dd-title" onClick={() => setIsOpen(false)}>
         <h2>{label}</h2>
         <img src={arrow} alt="flèche ouverte" className="arrow-open"></img>
       </button>
-      {content instanceof Array ? (
-        <div className="dd-content">
+      <div className="dd-content">
+        {content instanceof Array ? (
           <ul>
             {content.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
-        </div>
-      ) : (
-        <div className="dd-content">
+        ) : (
           <p>{content}</p>
-        </div>
-      )}
+        )}
+      </div>
     </article>
   ) : (
     <article className={classes}>

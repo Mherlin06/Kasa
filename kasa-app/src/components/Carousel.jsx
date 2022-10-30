@@ -5,6 +5,7 @@ import leftArrow from "../assets/logo/left-arrow.svg";
 import rightArrow from "../assets/logo/right-arrow.svg";
 
 const Carousel = ({ pictures }) => {
+  const isMultiplePictures = pictures.length > 1;
   const [currentIndex, setCurretIndex] = useState(0);
 
   const goToNext = () => {
@@ -19,7 +20,7 @@ const Carousel = ({ pictures }) => {
     setCurretIndex(newIndex);
   };
 
-  return (
+  return isMultiplePictures ? (
     <div
       style={{ backgroundImage: `url(${pictures[currentIndex]})` }}
       className="carousel"
@@ -30,7 +31,9 @@ const Carousel = ({ pictures }) => {
         className="carousel-arrow"
         onClick={goToPrevious}
       ></img>
-      <span className="carousel-index">{currentIndex + 1}/{pictures.length}</span>
+      <span className="carousel-index">
+        {currentIndex + 1}/{pictures.length}
+      </span>
       <img
         src={rightArrow}
         alt="flèche droite"
@@ -38,6 +41,11 @@ const Carousel = ({ pictures }) => {
         onClick={goToNext}
       ></img>
     </div>
+  ) : (
+    <div
+      style={{ backgroundImage: `url(${pictures[currentIndex]})` }}
+      className="carousel"
+    ></div>
   );
 };
 
