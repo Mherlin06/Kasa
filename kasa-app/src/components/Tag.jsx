@@ -3,7 +3,7 @@ import '../styles/Tag.css'
 
 const Tag = ({tag}) => {
   return (
-    <li>
+    <li key={tag}>
       {tag}
     </li>
   )

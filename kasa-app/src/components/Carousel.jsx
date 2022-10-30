@@ -30,6 +30,7 @@ const Carousel = ({ pictures }) => {
         className="carousel-arrow"
         onClick={goToPrevious}
       ></img>
+      <span className="carousel-index">{currentIndex + 1}/{pictures.length}</span>
       <img
         src={rightArrow}
         alt="flèche droite"

@@ -20,6 +20,13 @@
   cursor: pointer;
 }
 
+.carousel-index {
+  font-size: 18px;
+  color: #fff;
+  align-self: end;
+  margin: 25px;
+}
+
 @media screen and (min-width: 768px) {
   .carousel {
     height: 335px;
@@ -42,9 +49,15 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-}
+  }
   .carousel-arrow {
     height: 80px;
     margin: 23px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-index {
+    display: none;
   }
 }
