@@ -1,19 +1,12 @@
 import { Link } from "react-router-dom";
-import { getAccomodations } from "../data/accomodationData";
 import "../styles/ThumbCard.css";
 
-const ThumbCard = () => {
-  const accomodations = getAccomodations();
-
+const ThumbCard = ({ data }) => {
   return (
-    <section className="thumbcards">
-      {accomodations.map((accomodation) => (
-        <Link to={"/fiche-logement/" + accomodation.id} key={accomodation.id}>
-          <img src={accomodation.cover} alt={accomodation.title}></img>
-          <h2>{accomodation.title}</h2>
-        </Link>
-      ))}
-    </section>
+    <Link to={"/fiche-logement/" + data.id} key={data.id}>
+      <img src={data.cover} alt={data.title}></img>
+      <h2>{data.title}</h2>
+    </Link>
   );
 };
 
