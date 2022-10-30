@@ -4,7 +4,6 @@ import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
 import HostCard from "../components/HostCard";
 import Dropdown from "../components/Dropdown";
-import Equipments from "../components/Equipments";
 import { getAccomodation } from "../data/accomodationData";
 import { useParams } from "react-router-dom";
 import "../styles/Accomodation.css";
@@ -37,12 +36,13 @@ const Accomodation = () => {
       <section className="accomodation-dropdown-section">
         <Dropdown
           label="Description"
-          description={accomodation.description}
+          content={accomodation.description}
           classes="dropdown accomodation-dropdown"
         />
-        <Equipments
+        <Dropdown
+          label="Equipements"
           classes="dropdown accomodation-dropdown"
-          equipments={accomodation.equipments}
+          content={accomodation.equipments}
         />
       </section>
     </main>
