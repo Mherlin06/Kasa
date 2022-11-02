@@ -5,6 +5,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import IdChecker from "./components/IdChecker";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Accomodation from "./pages/Accomodation";
