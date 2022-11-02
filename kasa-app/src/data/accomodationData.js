@@ -587,3 +587,7 @@ export function getAccomodations() {
 export function getAccomodation(id) {
   return accomodations.find((accomodation) => accomodation.id === id);
 }
+
+export function checkId(id) {
+  return accomodations.some((item) => item.id === id);
+}

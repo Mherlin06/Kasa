@@ -9,8 +9,8 @@ import { useParams } from "react-router-dom";
 import "../styles/Accomodation.css";
 
 const Accomodation = () => {
-  const params = useParams();
-  const accomodation = getAccomodation(params.id);
+  const { id } = useParams();
+  const accomodation = getAccomodation(id);
 
   return (
     <main>
@@ -21,7 +21,7 @@ const Accomodation = () => {
           <h2>{accomodation.location}</h2>
           <ul className="tags">
             {accomodation.tags.map((tag) => (
-              <Tag tag={tag} key={tag}/>
+              <Tag tag={tag} key={tag} />
             ))}
           </ul>
         </div>
