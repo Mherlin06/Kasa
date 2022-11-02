@@ -1,15 +1,16 @@
 import React from "react";
+
 import Tag from "../components/Tag";
 import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
 import HostCard from "../components/HostCard";
 import Dropdown from "../components/Dropdown";
+
 import { getAccomodation } from "../data/accomodationData";
-import { useParams } from "react-router-dom";
+
 import "../styles/Accomodation.css";
 
-const Accomodation = () => {
-  const { id } = useParams();
+const Accomodation = ({ id }) => {
   const accomodation = getAccomodation(id);
 
   return (

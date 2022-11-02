@@ -1,4 +1,5 @@
 import logo from "../assets/logo/logo-footer.svg";
+
 import "../styles/Footer.css";
 
 const Footer = () => (

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
 import arrow from "../assets/logo/arrow.svg";
+
 import "../styles/Dropdown.css";
 
 const Dropdown = ({ classes, label, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); /** Closed by default */
 
   return isOpen ? (
     <article className={classes}>
@@ -12,7 +14,7 @@ const Dropdown = ({ classes, label, content }) => {
         <img src={arrow} alt="flèche ouverte" className="arrow-open"></img>
       </button>
       <div className="dd-content">
-        {content instanceof Array ? (
+        {content instanceof Array ? (  /** Check if content is an Array or String */
           <ul>
             {content.map((item) => (
               <li key={item}>{item}</li>

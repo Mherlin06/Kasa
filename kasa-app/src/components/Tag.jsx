@@ -1,12 +1,9 @@
-import React from 'react'
-import '../styles/Tag.css'
+import React from "react";
 
-const Tag = ({tag}) => {
-  return (
-    <li>
-      {tag}
-    </li>
-  )
-}
+import "../styles/Tag.css";
 
-export default Tag
+const Tag = ({ tag }) => {
+  return <li>{tag}</li>;
+};
+
+export default Tag;

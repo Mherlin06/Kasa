@@ -1,6 +1,8 @@
 import React from "react";
+
 import redStar from "../assets/logo/red-star.svg";
 import grayStar from "../assets/logo/gray-star.svg";
+
 import "../styles/Rating.css";
 
 const rangeRating = [1, 2, 3, 4, 5];

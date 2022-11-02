@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
+
 import "../styles/Carousel.css";
+
 import leftArrow from "../assets/logo/left-arrow.svg";
 import rightArrow from "../assets/logo/right-arrow.svg";
 
 const Carousel = ({ pictures }) => {
-  const isMultiplePictures = pictures.length > 1;
+  const isMultiplePictures = pictures.length > 1; /** Check if there are more than 1 pictures */
   const [currentIndex, setCurretIndex] = useState(0);
 
   const goToNext = () => {

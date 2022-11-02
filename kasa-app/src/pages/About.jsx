@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
+
 import { getInfos } from "../data/aboutInfos";
 
 const About = () => {

@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import ThumbCard from "../components/ThumbCard";
+
 import { getAccomodations } from "../data/accomodationData";
 
 const Home = () => {
