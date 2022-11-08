@@ -11,7 +11,7 @@ const Dropdown = ({ classes, label, content }) => {
     <article className={classes}>
       <button className="dd-title" onClick={() => setIsOpen(!isOpen)}>
         <h2>{label}</h2>
-        <img src={arrow} alt="flèche ouverte" className="arrow-open"></img>
+        <img src={arrow} alt="flèche ouverte" className={isOpen? "arrow-open" : "arrow-close"}></img>
       </button>
       {isOpen && (
         <div className="dd-content">
